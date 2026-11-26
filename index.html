@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WatzDat Creative Studio | Portfolio Branding, Print & Web Design</title>
+    <title>WATZ DAT ENTERPRISE | Portfolio Grafik Design & Branding Concept</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <script>
@@ -14,12 +14,13 @@
                         sans: ['Plus Jakarta Sans', 'sans-serif'],
                     },
                     colors: {
-                        studioBlack: '#0A0A0C',
-                        studioCard: '#131318',
-                        amethyst: '#7C3AED',
-                        amethystGlow: '#9333EA',
-                        platinumGold: '#D4AF37',
-                        silverText: '#A1A1AA'
+                        bgDark: '#0D1015',
+                        cardDark: '#161B22',
+                        cardHover: '#1C222B',
+                        brandCyan: '#38BDF8',
+                        brandMagenta: '#EC4899',
+                        brandYellow: '#FACC15',
+                        textMuted: '#94A3B8'
                     }
                 }
             }
@@ -27,162 +28,244 @@
     </script>
     <style>
         body {
-            background-color: #0A0A0C;
-            color: #F4F4F5;
+            background-color: #0D1015;
+            color: #F8FAFC;
         }
-        .gold-gradient {
-            background: linear-gradient(135deg, #F3E5AB 0%, #D4AF37 50%, #AA7C11 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+        .hero-glow {
+            background: radial-gradient(circle at 75% 40%, rgba(56, 189, 248, 0.14), rgba(236, 72, 153, 0.08), transparent 60%);
         }
-        .purple-glow {
-            box-shadow: 0 0 40px -10px rgba(124, 58, 237, 0.35);
-        }
-        .portfolio-card img {
+        .card-img-zoom img {
             transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
         }
-        .portfolio-card:hover img {
+        .card-img-zoom:hover img {
             transform: scale(1.05);
         }
     </style>
 </head>
-<body class="antialiased selection:bg-amethyst selection:text-white">
+<body class="antialiased selection:bg-brandMagenta selection:text-white">
 
     <!-- Navbar -->
-    <nav class="fixed w-full z-40 bg-studioBlack/85 backdrop-blur-md border-b border-white/5">
-        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-xl font-bold tracking-wider flex items-center gap-2.5">
-                <span class="w-8 h-8 rounded-lg bg-gradient-to-br from-amethyst to-purple-950 flex items-center justify-center text-white font-extrabold text-sm border border-platinumGold/50">WD</span>
-                <span>WATZDAT<span class="text-platinumGold">.</span></span>
+    <nav class="sticky top-0 z-40 bg-bgDark/90 backdrop-blur-md border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-brandYellow via-brandCyan to-brandMagenta p-[2px] flex items-center justify-center shadow-lg">
+                    <div class="w-full h-full bg-bgDark rounded-[6px] flex items-center justify-center font-extrabold text-sm tracking-tighter">
+                        <span class="text-brandCyan">W</span><span class="text-brandMagenta">D</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="font-extrabold text-base md:text-lg tracking-wide leading-none">
+                        <span class="text-brandCyan">WATS</span> <span class="text-brandMagenta">DAT</span> <span class="text-white font-semibold">ENTERPRISE</span>
+                    </div>
+                    <div class="text-[9px] text-brandYellow tracking-[0.14em] uppercase mt-1 font-medium">
+                        Creative Consultant • Advertising & Signboard • Event Consultant
+                    </div>
+                </div>
             </a>
-            <div class="hidden md:flex space-x-8 text-sm text-silverText">
-                <a href="#portfolio" class="hover:text-white transition">Portfolio Kerja</a>
-                <a href="#servis" class="hover:text-white transition">Kepakaran</a>
-                <a href="#proses" class="hover:text-white transition">Proses</a>
+
+            <!-- Navigation Links -->
+            <div class="hidden lg:flex items-center space-x-7 text-sm font-medium text-textMuted">
+                <a href="#home" class="text-white border-b-2 border-brandCyan pb-1">Home</a>
+                <a href="#portfolio" class="hover:text-white transition">Portfolio</a>
+                <a href="#services" class="hover:text-white transition">Services</a>
+                <a href="#about" class="hover:text-white transition">About Us</a>
+                <a href="#contact" class="hover:text-white transition">Contact</a>
             </div>
-            <a href="https://wa.me/60134324427?text=Hi%20WatzDat%20Creative%20Studio,%20saya%20baru%20tengok%20portfolio%20dan%20berminat%20untuk%20bincang%20projek." target="_blank" class="px-5 py-2.5 text-xs font-semibold uppercase tracking-wider rounded-full bg-white text-studioBlack hover:bg-platinumGold hover:text-black transition">
-                Hubungi Studio
-            </a>
+
+            <!-- Action Buttons -->
+            <div class="flex items-center gap-3">
+                <a href="https://wa.me/60134324427?text=Hi%20Watz%20Dat%20Enterprise,%20saya%20berminat%20untuk%20mulakan%20projek%20design%20/%20branding." target="_blank" class="px-5 py-2.5 rounded-lg bg-brandMagenta hover:bg-pink-600 text-white text-xs font-bold tracking-wide transition shadow-lg shadow-brandMagenta/20">
+                    Mula Projek
+                </a>
+                <a href="tel:+60134324427" class="hidden sm:flex items-center gap-2 px-4 py-2.5 rounded-lg bg-cardDark border border-white/10 hover:border-brandCyan/50 text-xs font-semibold text-white transition">
+                    <svg class="w-3.5 h-3.5 text-brandCyan" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                    013-432 4427
+                </a>
+            </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="pt-36 pb-20 px-6 relative overflow-hidden">
-        <div class="absolute top-20 left-1/2 -translate-x-1/2 w-[520px] h-[300px] bg-amethyst/20 blur-[130px] rounded-full pointer-events-none"></div>
-        
-        <div class="max-w-4xl mx-auto text-center relative z-10">
-            <div class="inline-block px-4 py-1.5 mb-6 rounded-full border border-platinumGold/30 bg-platinumGold/5 text-platinumGold text-xs font-medium tracking-widest uppercase">
-                WatzDat Creative Studio • Branding, Print & Web
+    <section id="home" class="relative overflow-hidden py-16 md:py-24 px-6 hero-glow border-b border-white/5">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-12 items-center">
+            <!-- Left Text Column -->
+            <div class="lg:col-span-6 space-y-6">
+                <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight leading-[1.15] text-white">
+                    Identiti Visual Tajam.<br>
+                    Solusi Rekaan Komersial &<br>
+                    Branding Berimpak Tinggi.
+                </h1>
+                <p class="text-textMuted text-base leading-relaxed max-w-xl">
+                    Penat guna ChatGPT buat design tak jadi? Penat nak ubah prompt yang sesuai? Biar kami yang uruskan. Berpengalaman sejak <strong class="text-white">2016</strong> dalam bidang kreatif serta acara, dan sejak <strong class="text-white">2025</strong> dalam pengiklanan komersial.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-2">
+                    <a href="#portfolio" class="px-6 py-3.5 rounded-lg bg-brandCyan hover:bg-sky-400 text-bgDark font-bold text-sm transition shadow-lg shadow-brandCyan/20">
+                        Lihat Portfolio
+                    </a>
+                    <a href="https://wa.me/60134324427?text=Hi%20Junaid,%20saya%20nak%20set%20sesi%20konsultasi%20design%20/%20branding." target="_blank" class="px-6 py-3.5 rounded-lg bg-cardDark border border-white/15 hover:border-brandCyan text-white font-semibold text-sm flex items-center gap-2 transition">
+                        <svg class="w-4 h-4 text-emerald-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/></svg>
+                        Sesi Konsultasi (WhatsApp)
+                    </a>
+                </div>
             </div>
-            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight mb-6">
-                Rekaan Berimpak Tinggi.<br>
-                <span class="gold-gradient">Identiti Jenama yang Kukuh.</span>
-            </h1>
-            <p class="text-silverText text-base md:text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
-                Menghimpunkan karya penjenamaan korporat, grafik pemasaran komersial, percetakan fizikal, serta pembangunan laman web moden yang direka khusus untuk melonjakkan kredibiliti bisnes anda.
-            </p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#portfolio" class="px-8 py-4 rounded-xl bg-amethyst hover:bg-amethystGlow text-white font-semibold transition purple-glow">
-                    Lihat Hasil Kerja Kami
-                </a>
-                <a href="https://wa.me/60134324427?text=Hi%20WatzDat,%20saya%20nak%20minta%20cadangan%20konsep%20design%20/%20website." target="_blank" class="px-8 py-4 rounded-xl bg-studioCard border border-white/10 hover:border-platinumGold/50 text-white font-semibold transition">
-                    Minta Draf Konsep
-                </a>
+
+            <!-- Right Showcase Visual Collage -->
+            <div class="lg:col-span-6">
+                <div class="relative rounded-2xl bg-cardDark border border-white/10 p-4 shadow-2xl">
+                    <div class="flex items-center gap-1.5 mb-3 pb-2 border-b border-white/5">
+                        <span class="w-2.5 h-2.5 rounded-full bg-rose-500"></span>
+                        <span class="w-2.5 h-2.5 rounded-full bg-amber-400"></span>
+                        <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+                        <span class="text-[11px] text-textMuted ml-2 font-mono">WatzDat Studio — Brand & Print Showcase</span>
+                    </div>
+                    <div class="aspect-[16/10] rounded-xl overflow-hidden bg-zinc-900">
+                        <img src="images/hero-showcase.jpg" onerror="this.src='https://placehold.co/900x560/161B22/38BDF8?text=Upload+images/hero-showcase.jpg+(Kolaj+Karya+Utama)'" alt="WatzDat Brand Showcase" class="w-full h-full object-cover">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="py-24 px-6 border-t border-white/5">
-        <div class="max-w-6xl mx-auto">
-            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+    <!-- Portfolio & Branding Concepts Grid (6 Cards Sebiji Layout Mockup) -->
+    <section id="portfolio" class="py-16 md:py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-10">
                 <div>
-                    <span class="text-platinumGold text-xs font-semibold tracking-widest uppercase">Arkib Karya & Projek</span>
-                    <h2 class="text-3xl md:text-4xl font-bold mt-2">Portfolio Terpilih</h2>
+                    <h2 class="text-xl md:text-2xl font-extrabold tracking-wide uppercase text-white">
+                        Portfolio & Branding Concepts
+                    </h2>
+                    <p class="text-xs text-textMuted mt-1">Klik mana-mana kad projek untuk paparan penuh & perincian kerja.</p>
                 </div>
                 
-                <!-- Filter Buttons -->
-                <div class="flex flex-wrap gap-2" id="filter-buttons">
-                    <button onclick="filterPortfolio('all', this)" class="filter-btn active px-4 py-2 rounded-lg text-xs font-semibold bg-amethyst text-white transition">Semua</button>
-                    <button onclick="filterPortfolio('branding', this)" class="filter-btn px-4 py-2 rounded-lg text-xs font-semibold bg-studioCard text-silverText hover:text-white border border-white/5 transition">Brand & Logo</button>
-                    <button onclick="filterPortfolio('graphic', this)" class="filter-btn px-4 py-2 rounded-lg text-xs font-semibold bg-studioCard text-silverText hover:text-white border border-white/5 transition">Grafik & Poster</button>
-                    <button onclick="filterPortfolio('print', this)" class="filter-btn px-4 py-2 rounded-lg text-xs font-semibold bg-studioCard text-silverText hover:text-white border border-white/5 transition">Commercial Print</button>
-                    <button onclick="filterPortfolio('web', this)" class="filter-btn px-4 py-2 rounded-lg text-xs font-semibold bg-studioCard text-silverText hover:text-white border border-white/5 transition">Web Concept</button>
+                <!-- Filter Pills -->
+                <div class="flex flex-wrap gap-2">
+                    <button onclick="filterCards('all', this)" class="filter-pill px-3.5 py-1.5 rounded-md text-xs font-semibold bg-brandCyan text-bgDark transition">Semua</button>
+                    <button onclick="filterCards('branding', this)" class="filter-pill px-3.5 py-1.5 rounded-md text-xs font-semibold bg-cardDark text-textMuted hover:text-white border border-white/5 transition">Branding</button>
+                    <button onclick="filterCards('print', this)" class="filter-pill px-3.5 py-1.5 rounded-md text-xs font-semibold bg-cardDark text-textMuted hover:text-white border border-white/5 transition">Print</button>
+                    <button onclick="filterCards('signage', this)" class="filter-pill px-3.5 py-1.5 rounded-md text-xs font-semibold bg-cardDark text-textMuted hover:text-white border border-white/5 transition">Signage & Event</button>
                 </div>
             </div>
 
-            <!-- Portfolio Grid -->
-            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8" id="portfolio-grid">
+            <!-- 6-Column / 3-Column Responsive Grid -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-5" id="portfolio-grid">
                 
-                <!-- Item 1: Branding -->
-                <div class="portfolio-item portfolio-card group bg-studioCard rounded-2xl overflow-hidden border border-white/5 hover:border-platinumGold/40 transition cursor-pointer" data-category="branding" onclick="openModal('Identiti Monogram & Jenama WatzDat', 'Brand & Logo', 'Pembangunan sistem identiti visual korporat termasuk rekaan logo monogram WD, palet warna premium (Amethyst, Platinum Gold & Studio Black), serta garis panduan visual.', 'images/work-1.jpg')">
-                    <div class="aspect-[4/3] bg-zinc-900 overflow-hidden relative">
-                        <img src="images/work-1.jpg" onerror="this.src='https://placehold.co/800x600/131318/D4AF37?text=Upload+images/work-1.jpg'" alt="Brand Identity" class="w-full h-full object-cover">
-                        <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-studioBlack/80 backdrop-blur-md text-[11px] font-medium text-platinumGold border border-platinumGold/30">Brand & Logo</span>
+                <!-- Card 1 -->
+                <div class="work-card card-img-zoom bg-cardDark hover:bg-cardHover rounded-xl border border-white/10 overflow-hidden flex flex-col justify-between cursor-pointer transition" data-tags="branding print" onclick="openCaseStudy('Brand Identity & Corporate Logo Concept', 'Branding • Print', 'Pembangunan sistem identiti visual korporat termasuk rekaan logo monogram, variasi warna rasmi, dan garis panduan penggunaan jenama.', 'images/work-1.jpg')">
+                    <div>
+                        <div class="relative aspect-[4/3] bg-zinc-900 overflow-hidden">
+                            <img src="images/work-1.jpg" onerror="this.src='https://placehold.co/600x450/161B22/38BDF8?text=work-1.jpg'" alt="Brand Identity" class="w-full h-full object-cover">
+                            <div class="absolute top-2.5 left-2.5 flex gap-1.5">
+                                <span class="px-2 py-0.5 rounded bg-white text-bgDark text-[10px] font-bold">Branding</span>
+                                <span class="px-2 py-0.5 rounded bg-bgDark/80 text-white text-[10px] font-medium border border-white/15">Print</span>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-bold text-sm text-white leading-snug">Brand Identity & Corporate Logo Concept</h3>
+                            <p class="text-[11px] text-textMuted mt-2 leading-relaxed">Monogram logos, Corporate Identity Guidelines & brand kits.</p>
+                        </div>
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-lg font-bold group-hover:text-platinumGold transition">Identiti Monogram & Jenama</h3>
-                        <p class="text-silverText text-xs mt-2 line-clamp-2">Rekaan logo korporat, tipografi moden, dan sistem identiti visual berimpak tinggi.</p>
-                    </div>
-                </div>
-
-                <!-- Item 2: Grafik & Poster -->
-                <div class="portfolio-item portfolio-card group bg-studioCard rounded-2xl overflow-hidden border border-white/5 hover:border-amethyst/50 transition cursor-pointer" data-category="graphic" onclick="openModal('Kempen Visual & Infografik Korporat', 'Grafik & Poster', 'Susun atur poster pemasaran digital dan infografik kewangan berstruktur tinggi dengan hierarki tipografi yang jelas untuk menarik perhatian audiens sasaran.', 'images/work-2.jpg')">
-                    <div class="aspect-[4/3] bg-zinc-900 overflow-hidden relative">
-                        <img src="images/work-2.jpg" onerror="this.src='https://placehold.co/800x600/131318/7C3AED?text=Upload+images/work-2.jpg'" alt="Poster & Infographic" class="w-full h-full object-cover">
-                        <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-studioBlack/80 backdrop-blur-md text-[11px] font-medium text-purple-300 border border-amethyst/40">Grafik & Poster</span>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-lg font-bold group-hover:text-amethyst transition">Kempen Visual & Infografik</h3>
-                        <p class="text-silverText text-xs mt-2 line-clamp-2">Rekaan poster promosi media sosial dan infografik berstruktur untuk penyampaian mesej pantas.</p>
+                    <div class="px-4 pb-4">
+                        <span class="text-[11px] font-semibold text-brandYellow inline-flex items-center gap-1">Lihat Kajian Kes →</span>
                     </div>
                 </div>
 
-                <!-- Item 3: Commercial Print -->
-                <div class="portfolio-item portfolio-card group bg-studioCard rounded-2xl overflow-hidden border border-white/5 hover:border-platinumGold/40 transition cursor-pointer" data-category="print" onclick="openModal('Pemasangan Bunting & Bahan Percetakan Skala Besar', 'Commercial Print', 'Pengurusan rekaan grafik sedia cetak (print-ready) dan koordinasi pengeluaran bagi 150 unit bunting promosi, banner acara, serta pelekat produk komersial.', 'images/work-3.jpg')">
-                    <div class="aspect-[4/3] bg-zinc-900 overflow-hidden relative">
-                        <img src="images/work-3.jpg" onerror="this.src='https://placehold.co/800x600/131318/D4AF37?text=Upload+images/work-3.jpg'" alt="Commercial Print" class="w-full h-full object-cover">
-                        <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-studioBlack/80 backdrop-blur-md text-[11px] font-medium text-platinumGold border border-platinumGold/30">Commercial Print</span>
+                <!-- Card 2 -->
+                <div class="work-card card-img-zoom bg-cardDark hover:bg-cardHover rounded-xl border border-white/10 overflow-hidden flex flex-col justify-between cursor-pointer transition" data-tags="branding print" onclick="openCaseStudy('Creative Consultation & Marketing Flyers', 'Branding • Print', 'Rekaan flyers promosi, brosur korporat, kad bisnes, dan grafik pemasaran berimpak tinggi yang sedia untuk cetakan warna (Color) mahupun hitam putih (BW).', 'images/work-2.jpg')">
+                    <div>
+                        <div class="relative aspect-[4/3] bg-zinc-900 overflow-hidden">
+                            <img src="images/work-2.jpg" onerror="this.src='https://placehold.co/600x450/161B22/EC4899?text=work-2.jpg'" alt="Marketing Flyers" class="w-full h-full object-cover">
+                            <div class="absolute top-2.5 left-2.5 flex gap-1.5">
+                                <span class="px-2 py-0.5 rounded bg-white text-bgDark text-[10px] font-bold">Branding</span>
+                                <span class="px-2 py-0.5 rounded bg-bgDark/80 text-white text-[10px] font-medium border border-white/15">Print</span>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-bold text-sm text-white leading-snug">Creative Consultation & Marketing Flyers</h3>
+                            <p class="text-[11px] text-textMuted mt-2 leading-relaxed">High-impact commercial print, brochures, business cards & promotional graphics.</p>
+                        </div>
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-lg font-bold group-hover:text-platinumGold transition">Bunting, Banner & Sticker Produk</h3>
-                        <p class="text-silverText text-xs mt-2 line-clamp-2">Rekaan dan cetakan fizikal berskala besar untuk kempen lapangan dan pembungkusan produk.</p>
-                    </div>
-                </div>
-
-                <!-- Item 4: Web Concept -->
-                <div class="portfolio-item portfolio-card group bg-studioCard rounded-2xl overflow-hidden border border-white/5 hover:border-amethyst/50 transition cursor-pointer" data-category="web" onclick="openModal('Konsep Laman Web & Landing Page Korporat', 'Web Concept', 'Pembangunan antaramuka laman web responsif (mobile-first) dengan integrasi terus ke WhatsApp, direka khas mengikut Corporate Identity (CI) syarikat.', 'images/work-4.jpg')">
-                    <div class="aspect-[4/3] bg-zinc-900 overflow-hidden relative">
-                        <img src="images/work-4.jpg" onerror="this.src='https://placehold.co/800x600/131318/7C3AED?text=Upload+images/work-4.jpg'" alt="Web Design Concept" class="w-full h-full object-cover">
-                        <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-studioBlack/80 backdrop-blur-md text-[11px] font-medium text-purple-300 border border-amethyst/40">Web Concept</span>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-lg font-bold group-hover:text-amethyst transition">Landing Page & Web Korporat</h3>
-                        <p class="text-silverText text-xs mt-2 line-clamp-2">Susun atur laman web moden, pantas, dan mesra peranti mudah alih untuk profil syarikat.</p>
+                    <div class="px-4 pb-4">
+                        <span class="text-[11px] font-semibold text-brandYellow inline-flex items-center gap-1">Lihat Kajian Kes →</span>
                     </div>
                 </div>
 
-                <!-- Item 5: Vector & Custom Artwork -->
-                <div class="portfolio-item portfolio-card group bg-studioCard rounded-2xl overflow-hidden border border-white/5 hover:border-platinumGold/40 transition cursor-pointer" data-category="graphic" onclick="openModal('Ilustrasi Vektor & Corak Kerawang Eksklusif', 'Grafik & Poster', 'Penghasilan aset vektor beresolusi tinggi dan olahan motif tradisional moden untuk kegunaan latar belakang korporat, cenderahati, dan percetakan.', 'images/work-5.jpg')">
-                    <div class="aspect-[4/3] bg-zinc-900 overflow-hidden relative">
-                        <img src="images/work-5.jpg" onerror="this.src='https://placehold.co/800x600/131318/D4AF37?text=Upload+images/work-5.jpg'" alt="Vector Artwork" class="w-full h-full object-cover">
-                        <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-studioBlack/80 backdrop-blur-md text-[11px] font-medium text-platinumGold border border-platinumGold/30">Grafik & Poster</span>
+                <!-- Card 3 -->
+                <div class="work-card card-img-zoom bg-cardDark hover:bg-cardHover rounded-xl border border-white/10 overflow-hidden flex flex-col justify-between cursor-pointer transition" data-tags="signage" onclick="openCaseStudy('Signboard & Physical Advertising Coordinator', 'Signage • Advertising', 'Penyelarasan reka bentuk dan pemasangan papan tanda premis (signboard), paparan dalaman, serta struktur pengiklanan luar bangunan.', 'images/work-3.jpg')">
+                    <div>
+                        <div class="relative aspect-[4/3] bg-zinc-900 overflow-hidden">
+                            <img src="images/work-3.jpg" onerror="this.src='https://placehold.co/600x450/161B22/FACC15?text=work-3.jpg'" alt="Signboard" class="w-full h-full object-cover">
+                            <div class="absolute top-2.5 left-2.5 flex gap-1.5">
+                                <span class="px-2 py-0.5 rounded bg-white text-bgDark text-[10px] font-bold">Signage</span>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-bold text-sm text-white leading-snug">Signboard & Physical Advertising Coordinator</h3>
+                            <p class="text-[11px] text-textMuted mt-2 leading-relaxed">Indoor displays, outdoor signboard & commercial advertising layouts.</p>
+                        </div>
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-lg font-bold group-hover:text-platinumGold transition">Aset Vektor & Motif Eksklusif</h3>
-                        <p class="text-silverText text-xs mt-2 line-clamp-2">Rekaan vektor tajam tanpa pecah untuk kegunaan cetakan besar mahupun aset digital.</p>
+                    <div class="px-4 pb-4">
+                        <span class="text-[11px] font-semibold text-brandYellow inline-flex items-center gap-1">Lihat Kajian Kes →</span>
                     </div>
                 </div>
 
-                <!-- Item 6: Packaging & Label -->
-                <div class="portfolio-item portfolio-card group bg-studioCard rounded-2xl overflow-hidden border border-white/5 hover:border-amethyst/50 transition cursor-pointer" data-category="print" onclick="openModal('Rekaan Label & Pembungkusan F&B', 'Commercial Print', 'Rekaan label produk makanan dan minuman yang menonjol di rak jualan dengan pilihan kemasan kalis air dan potongan mengikut bentuk (die-cut).', 'images/work-6.jpg')">
-                    <div class="aspect-[4/3] bg-zinc-900 overflow-hidden relative">
-                        <img src="images/work-6.jpg" onerror="this.src='https://placehold.co/800x600/131318/7C3AED?text=Upload+images/work-6.jpg'" alt="Product Label" class="w-full h-full object-cover">
-                        <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-studioBlack/80 backdrop-blur-md text-[11px] font-medium text-purple-300 border border-amethyst/40">Commercial Print</span>
+                <!-- Card 4 -->
+                <div class="work-card card-img-zoom bg-cardDark hover:bg-cardHover rounded-xl border border-white/10 overflow-hidden flex flex-col justify-between cursor-pointer transition" data-tags="signage print" onclick="openCaseStudy('Bunting, Banner & Event Collaterals', 'Signage • Event', 'Perancangan visual acara (Event Planning) serta percetakan bunting promosi, banner bersaiz besar, dan bahan pameran komersial.', 'images/work-4.jpg')">
+                    <div>
+                        <div class="relative aspect-[4/3] bg-zinc-900 overflow-hidden">
+                            <img src="images/work-4.jpg" onerror="this.src='https://placehold.co/600x450/161B22/38BDF8?text=work-4.jpg'" alt="Bunting & Banner" class="w-full h-full object-cover">
+                            <div class="absolute top-2.5 left-2.5 flex gap-1.5">
+                                <span class="px-2 py-0.5 rounded bg-white text-bgDark text-[10px] font-bold">Signage</span>
+                                <span class="px-2 py-0.5 rounded bg-brandMagenta text-white text-[10px] font-bold">Event</span>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-bold text-sm text-white leading-snug">Bunting, Banner & Event Collaterals</h3>
+                            <p class="text-[11px] text-textMuted mt-2 leading-relaxed">Exhibition event planning materials, large format commercial print.</p>
+                        </div>
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-lg font-bold group-hover:text-amethyst transition">Label Produk & Pembungkusan</h3>
-                        <p class="text-silverText text-xs mt-2 line-clamp-2">Rekaan pelekat produk die-cut untuk usahawan F&B dan jenama runcit tempatan.</p>
+                    <div class="px-4 pb-4">
+                        <span class="text-[11px] font-semibold text-brandYellow inline-flex items-center gap-1">Lihat Kajian Kes →</span>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="work-card card-img-zoom bg-cardDark hover:bg-cardHover rounded-xl border border-white/10 overflow-hidden flex flex-col justify-between cursor-pointer transition" data-tags="branding print" onclick="openCaseStudy('T-Shirt & Custom Merchandise Printing', 'Branding • Print', 'Rekaan grafik pakaian seragam korporat, baju acara, topi, dan barangan cenderahati berjenama (merchandise) dengan kemasan cetakan tahan lasak.', 'images/work-5.jpg')">
+                    <div>
+                        <div class="relative aspect-[4/3] bg-zinc-900 overflow-hidden">
+                            <img src="images/work-5.jpg" onerror="this.src='https://placehold.co/600x450/161B22/EC4899?text=work-5.jpg'" alt="T-Shirt Printing" class="w-full h-full object-cover">
+                            <div class="absolute top-2.5 left-2.5 flex gap-1.5">
+                                <span class="px-2 py-0.5 rounded bg-white text-bgDark text-[10px] font-bold">Branding</span>
+                                <span class="px-2 py-0.5 rounded bg-bgDark/80 text-white text-[10px] font-medium border border-white/15">Print</span>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-bold text-sm text-white leading-snug">T-Shirt & Custom Merchandise Printing</h3>
+                            <p class="text-[11px] text-textMuted mt-2 leading-relaxed">Uniform, teamwear, promotional merchandise & custom apparel branding.</p>
+                        </div>
+                    </div>
+                    <div class="px-4 pb-4">
+                        <span class="text-[11px] font-semibold text-brandYellow inline-flex items-center gap-1">Lihat Kajian Kes →</span>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="work-card card-img-zoom bg-cardDark hover:bg-cardHover rounded-xl border border-white/10 overflow-hidden flex flex-col justify-between cursor-pointer transition" data-tags="branding print" onclick="openCaseStudy('Souvenirs, Corporate Gifts & Packaging Concept', 'Branding • Print', 'Konsep pembungkusan produk (packaging), pelekat label (die-cut stickers), dan set cenderahati korporat eksklusif untuk majlis dan pelanggan.', 'images/work-6.jpg')">
+                    <div>
+                        <div class="relative aspect-[4/3] bg-zinc-900 overflow-hidden">
+                            <img src="images/work-6.jpg" onerror="this.src='https://placehold.co/600x450/161B22/FACC15?text=work-6.jpg'" alt="Souvenirs & Packaging" class="w-full h-full object-cover">
+                            <div class="absolute top-2.5 left-2.5 flex gap-1.5">
+                                <span class="px-2 py-0.5 rounded bg-white text-bgDark text-[10px] font-bold">Branding</span>
+                                <span class="px-2 py-0.5 rounded bg-bgDark/80 text-white text-[10px] font-medium border border-white/15">Print</span>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-bold text-sm text-white leading-snug">Souvenirs, Corporate Gifts & Packaging Concept</h3>
+                            <p class="text-[11px] text-textMuted mt-2 leading-relaxed">Branded gift kits, souvenirs, product stickers & premium packaging.</p>
+                        </div>
+                    </div>
+                    <div class="px-4 pb-4">
+                        <span class="text-[11px] font-semibold text-brandYellow inline-flex items-center gap-1">Lihat Kajian Kes →</span>
                     </div>
                 </div>
 
@@ -190,151 +273,150 @@
         </div>
     </section>
 
-    <!-- Servis Section -->
-    <section id="servis" class="py-24 px-6 bg-studioCard/40 border-t border-white/5">
-        <div class="max-w-6xl mx-auto">
-            <div class="mb-16">
-                <span class="text-amethyst text-xs font-semibold tracking-widest uppercase">Skop Perkhidmatan</span>
-                <h2 class="text-3xl md:text-4xl font-bold mt-2">Ekosistem Kreatif Bersepadu</h2>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-studioBlack p-8 rounded-2xl border border-white/5">
-                    <div class="text-platinumGold font-mono text-sm mb-4">01 / DIGITAL</div>
-                    <h3 class="text-xl font-bold mb-3">Web Design & Landing Page</h3>
-                    <p class="text-silverText text-sm leading-relaxed">
-                        Laman web profil syarikat dan halaman jualan yang dibina berpandukan CI anda. Ringan, pantas dimuatkan, dan terus menghubungkan pelanggan ke WhatsApp.
-                    </p>
-                </div>
-
-                <div class="bg-studioBlack p-8 rounded-2xl border border-white/5">
-                    <div class="text-amethyst font-mono text-sm mb-4">02 / VISUAL</div>
-                    <h3 class="text-xl font-bold mb-3">Brand Identity & Grafik</h3>
-                    <p class="text-silverText text-sm leading-relaxed">
-                        Pembinaan logo, kit jenama, poster kempen media sosial, dan aset visual komersial dengan susun atur bersih serta ruang negatif yang seimbang.
-                    </p>
-                </div>
-
-                <div class="bg-studioBlack p-8 rounded-2xl border border-white/5">
-                    <div class="text-platinumGold font-mono text-sm mb-4">03 / FIZIKAL</div>
-                    <h3 class="text-xl font-bold mb-3">Commercial Print & Signage</h3>
-                    <p class="text-silverText text-sm leading-relaxed">
-                        Penyediaan fail sedia cetak dan pengeluaran sticker produk, bunting, banner, serta papan tanda bagi menyokong kehadiran fizikal bisnes anda.
-                    </p>
-                </div>
+    <!-- Services Summary Strip -->
+    <section id="services" class="py-12 px-6 border-t border-white/5 bg-cardDark/40">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-xs font-bold uppercase tracking-widest text-brandCyan mb-4">Ringkasan Skop Perkhidmatan</div>
+            <div class="flex flex-wrap gap-2.5 text-xs text-slate-300">
+                <span class="px-3.5 py-2 rounded-lg bg-bgDark border border-white/10">Creative & Graphic Consultation</span>
+                <span class="px-3.5 py-2 rounded-lg bg-bgDark border border-white/10">Concept / Brand Design</span>
+                <span class="px-3.5 py-2 rounded-lg bg-bgDark border border-white/10">Printing Color / BW</span>
+                <span class="px-3.5 py-2 rounded-lg bg-bgDark border border-white/10">Bunting & Banner</span>
+                <span class="px-3.5 py-2 rounded-lg bg-bgDark border border-white/10">T-Shirt Printing</span>
+                <span class="px-3.5 py-2 rounded-lg bg-bgDark border border-white/10">Advertising / Signboard Coordinator</span>
+                <span class="px-3.5 py-2 rounded-lg bg-bgDark border border-white/10">Event Planning</span>
+                <span class="px-3.5 py-2 rounded-lg bg-bgDark border border-white/10">Flyers & Business Card</span>
+                <span class="px-3.5 py-2 rounded-lg bg-bgDark border border-white/10">Souvenirs</span>
             </div>
         </div>
     </section>
 
-    <!-- Proses Kerja -->
-    <section id="proses" class="py-24 px-6 border-t border-white/5">
-        <div class="max-w-5xl mx-auto text-center">
-            <span class="text-platinumGold text-xs font-semibold tracking-widest uppercase">Aliran Kerja Studio</span>
-            <h2 class="text-3xl font-bold mt-2 mb-16">Bagaimana Kami Bekerja</h2>
+    <!-- Bottom Section: Small Side Note (Takaful) & Contact Directory -->
+    <footer id="contact" class="py-12 px-6 border-t border-white/10 bg-bgDark">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-6 items-stretch">
             
-            <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-6 text-left">
-                <div class="p-6 rounded-xl bg-studioCard border border-white/5">
-                    <div class="text-platinumGold font-mono text-sm mb-2">Langkah 01</div>
-                    <h4 class="font-bold mb-2">Konsultasi & CI</h4>
-                    <p class="text-xs text-silverText leading-relaxed">Meneliti identiti korporat, warna rasmi, dan objektif perniagaan anda.</p>
-                </div>
-                <div class="p-6 rounded-xl bg-studioCard border border-white/5">
-                    <div class="text-platinumGold font-mono text-sm mb-2">Langkah 02</div>
-                    <h4 class="font-bold mb-2">Draf Konsep</h4>
-                    <p class="text-xs text-silverText leading-relaxed">Menghasilkan cadangan visual awal sebelum produksi penuh dimulakan.</p>
-                </div>
-                <div class="p-6 rounded-xl bg-studioCard border border-white/5">
-                    <div class="text-platinumGold font-mono text-sm mb-2">Langkah 03</div>
-                    <h4 class="font-bold mb-2">Produksi & Semakan</h4>
-                    <p class="text-xs text-silverText leading-relaxed">Pelaksanaan rekaan penuh atau pembangunan kod dengan sesi semakan teliti.</p>
-                </div>
-                <div class="p-6 rounded-xl bg-studioCard border border-white/5">
-                    <div class="text-platinumGold font-mono text-sm mb-2">Langkah 04</div>
-                    <h4 class="font-bold mb-2">Serahan Akhir</h4>
-                    <p class="text-xs text-silverText leading-relaxed">Penyerahan fail induk resolusi tinggi, cetakan siap, atau pelancaran laman web.</p>
+            <!-- Very Small Side Note: Wealth / Income Protection (Takaful) -->
+            <div id="about" class="lg:col-span-5 flex flex-col justify-between">
+                <div>
+                    <span class="inline-block px-3 py-1 rounded-t-lg bg-brandCyan/15 border-t border-x border-brandCyan/30 text-[11px] font-semibold text-brandCyan">
+                        ✦ Side Service / Perkhidmatan Sampingan
+                    </span>
+                    <div class="p-4 rounded-b-xl rounded-tr-xl bg-cardDark border border-white/10 flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-lg bg-bgDark border border-white/10 flex flex-col items-center justify-center shrink-0 text-center p-1">
+                            <span class="text-[9px] font-extrabold text-rose-500 leading-tight">AIA</span>
+                            <span class="text-[8px] text-brandYellow font-bold leading-tight">XANDER</span>
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold text-white">Wealth & Income Protection (Takaful Advisor)</h4>
+                            <p class="text-[11px] text-textMuted mt-0.5 leading-relaxed">
+                                Juga menyediakan khidmat konsultasi Wealth / Income Protection (AIA Public Takaful) — siap siaga kewangan anda untuk manfaat diri dan keluarga tersayang.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- CTA Footer -->
-    <footer class="py-20 px-6 border-t border-white/10 text-center relative overflow-hidden">
-        <div class="max-w-2xl mx-auto relative z-10">
-            <h2 class="text-3xl font-bold mb-4">Bincang Projek Seterusnya</h2>
-            <p class="text-silverText text-sm mb-8">
-                Perlukan penjenamaan semula, bahan percetakan komersial, atau laman web korporat? Hubungi kami untuk sesi perbincangan ringkas.
-            </p>
-            <a href="https://wa.me/60134324427?text=Hi%20WatzDat%20Creative%20Studio,%20saya%20berminat%20untuk%20bincang%20projek." target="_blank" class="inline-block px-8 py-4 rounded-xl bg-gradient-to-r from-amethyst to-purple-700 hover:opacity-90 text-white font-semibold transition purple-glow">
-                WhatsApp WatzDat Creative Studio
-            </a>
-            <div class="mt-16 pt-8 border-t border-white/5 text-xs text-silverText flex flex-col sm:flex-row justify-between items-center gap-4">
-                <p>&copy; 2026 WatzDat Creative Studio (Watz Dat Enterprise). Hak Cipta Terpelihara.</p>
-                <p>Bandar Puncak Alam, Selangor</p>
+            <!-- Contact Cards (Junaid, Dani & SSM Registration) -->
+            <div class="lg:col-span-7 grid sm:grid-cols-3 gap-4">
+                <!-- Contact 1 -->
+                <a href="https://wa.me/60134324427" target="_blank" class="p-4 rounded-xl bg-cardDark hover:bg-cardHover border border-white/10 flex flex-col justify-between transition">
+                    <div>
+                        <div class="text-xs font-bold text-white flex items-center gap-1.5">
+                            <span class="w-2 h-2 rounded-full bg-brandCyan"></span>
+                            Junaid Mustaffa
+                        </div>
+                        <div class="text-[11px] text-textMuted mt-0.5">Creative Consultant</div>
+                    </div>
+                    <div class="text-xs font-bold text-brandYellow mt-3">013-432 4427</div>
+                </a>
+
+                <!-- Contact 2 -->
+                <a href="https://wa.me/60149409708" target="_blank" class="p-4 rounded-xl bg-cardDark hover:bg-cardHover border border-white/10 flex flex-col justify-between transition">
+                    <div>
+                        <div class="text-xs font-bold text-white flex items-center gap-1.5">
+                            <span class="w-2 h-2 rounded-full bg-brandMagenta"></span>
+                            Dani Izzatul
+                        </div>
+                        <div class="text-[11px] text-textMuted mt-0.5">Partner / Advisor</div>
+                    </div>
+                    <div class="mt-3">
+                        <div class="text-xs font-bold text-brandYellow">014-940 9708</div>
+                        <div class="text-[10px] text-textMuted truncate">watzdatmedia@gmail.com</div>
+                    </div>
+                </a>
+
+                <!-- Company Info -->
+                <div class="p-4 rounded-xl bg-cardDark border border-white/10 flex flex-col justify-between">
+                    <div>
+                        <div class="text-xs font-extrabold text-white">WATZ DAT ENTERPRISE</div>
+                        <div class="text-[11px] text-brandCyan font-mono mt-0.5">(IP0619172-D)</div>
+                    </div>
+                    <div class="text-[11px] text-textMuted mt-3">
+                        Kami membantu untuk ketenangan urusan anda.
+                    </div>
+                </div>
             </div>
+
         </div>
     </footer>
 
-    <!-- Lightbox Modal untuk Preview Portfolio -->
-    <div id="portfolio-modal" class="fixed inset-0 z-50 hidden bg-black/90 backdrop-blur-sm flex items-center justify-center p-4" onclick="closeModal()">
-        <div class="bg-studioCard border border-white/10 rounded-2xl max-w-2xl w-full overflow-hidden shadow-2xl" onclick="event.stopPropagation()">
+    <!-- Modal Kajian Kes / Preview Gambar -->
+    <div id="case-modal" class="fixed inset-0 z-50 hidden bg-black/85 backdrop-blur-sm flex items-center justify-center p-4" onclick="closeCaseStudy()">
+        <div class="bg-cardDark border border-white/15 rounded-2xl max-w-2xl w-full overflow-hidden shadow-2xl" onclick="event.stopPropagation()">
             <div class="aspect-[16/10] bg-zinc-900 relative">
-                <img id="modal-img" src="" alt="Preview" class="w-full h-full object-cover">
-                <button onclick="closeModal()" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-black/70 text-white hover:bg-amethyst flex items-center justify-center transition">✕</button>
+                <img id="modal-img" src="" alt="Case Study Preview" class="w-full h-full object-cover">
+                <button onclick="closeCaseStudy()" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-bgDark/80 text-white hover:bg-brandMagenta flex items-center justify-center text-sm transition">✕</button>
             </div>
-            <div class="p-6 md:p-8">
-                <span id="modal-category" class="text-xs font-semibold uppercase tracking-widest text-platinumGold"></span>
-                <h3 id="modal-title" class="text-2xl font-bold mt-1 mb-3"></h3>
-                <p id="modal-desc" class="text-silverText text-sm leading-relaxed mb-6"></p>
-                <div class="flex justify-end">
-                    <a id="modal-wa" href="#" target="_blank" class="px-6 py-3 rounded-xl bg-amethyst hover:bg-amethystGlow text-white text-xs font-semibold uppercase tracking-wider transition">
-                        Tempah Servis Serupa
-                    </a>
+            <div class="p-6">
+                <span id="modal-tag" class="text-[11px] font-bold uppercase tracking-wider text-brandCyan"></span>
+                <h3 id="modal-title" class="text-xl font-bold text-white mt-1"></h3>
+                <p id="modal-desc" class="text-xs text-textMuted leading-relaxed mt-2 mb-5"></p>
+                <div class="flex justify-end gap-3">
+                    <button onclick="closeCaseStudy()" class="px-4 py-2 rounded-lg bg-bgDark text-xs text-textMuted hover:text-white border border-white/10">Tutup</button>
+                    <a id="modal-wa" href="#" target="_blank" class="px-5 py-2 rounded-lg bg-brandMagenta hover:bg-pink-600 text-xs font-bold text-white transition">Tanya Projek Serupa</a>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Script untuk Filter & Modal -->
     <script>
-        function filterPortfolio(category, btn) {
-            // Update active button styling
-            document.querySelectorAll('.filter-btn').forEach(b => {
-                b.classList.remove('bg-amethyst', 'text-white');
-                b.classList.add('bg-studioCard', 'text-silverText');
+        function filterCards(tag, btn) {
+            document.querySelectorAll('.filter-pill').forEach(p => {
+                p.classList.remove('bg-brandCyan', 'text-bgDark');
+                p.classList.add('bg-cardDark', 'text-textMuted');
             });
-            btn.classList.remove('bg-studioCard', 'text-silverText');
-            btn.classList.add('bg-amethyst', 'text-white');
+            btn.classList.remove('bg-cardDark', 'text-textMuted');
+            btn.classList.add('bg-brandCyan', 'text-bgDark');
 
-            // Filter items
-            const items = document.querySelectorAll('.portfolio-item');
-            items.forEach(item => {
-                if (category === 'all' || item.getAttribute('data-category') === category) {
-                    item.style.display = 'block';
+            document.querySelectorAll('.work-card').forEach(card => {
+                const tags = card.getAttribute('data-tags');
+                if (tag === 'all' || tags.includes(tag)) {
+                    card.style.display = 'flex';
                 } else {
-                    item.style.display = 'none';
+                    card.style.display = 'none';
                 }
             });
         }
 
-        function openModal(title, category, desc, imgSrc) {
+        function openCaseStudy(title, tag, desc, imgPath) {
             document.getElementById('modal-title').innerText = title;
-            document.getElementById('modal-category').innerText = category;
+            document.getElementById('modal-tag').innerText = tag;
             document.getElementById('modal-desc').innerText = desc;
             
-            const modalImg = document.getElementById('modal-img');
-            modalImg.src = imgSrc;
-            modalImg.onerror = function() {
-                this.src = 'https://placehold.co/800x500/131318/D4AF37?text=' + encodeURIComponent(title);
+            const img = document.getElementById('modal-img');
+            img.src = imgPath;
+            img.onerror = function() {
+                this.src = 'https://placehold.co/800x500/161B22/38BDF8?text=' + encodeURIComponent(title);
             };
 
-            const waText = encodeURIComponent(`Hi WatzDat, saya berminat dengan projek macam "${title}" (${category}).`);
-            document.getElementById('modal-wa').href = `https://wa.me/60134324427?text=${waText}`;
+            const msg = encodeURIComponent(`Hi Watz Dat Enterprise, saya berminat nak tanya tentang servis "${title}".`);
+            document.getElementById('modal-wa').href = `https://wa.me/60134324427?text=${msg}`;
 
-            document.getElementById('portfolio-modal').classList.remove('hidden');
+            document.getElementById('case-modal').classList.remove('hidden');
         }
 
-        function closeModal() {
-            document.getElementById('portfolio-modal').classList.add('hidden');
+        function closeCaseStudy() {
+            document.getElementById('case-modal').classList.add('hidden');
         }
     </script>
 
