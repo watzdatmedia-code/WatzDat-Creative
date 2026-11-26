@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ms" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WatzDat Creative Studio | Branding, Print & Web Design</title>
+    <!-- Tailwind CSS CDN untuk styling pantas & kemas -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        studioBlack: '#0A0A0C',
+                        studioCard: '#131318',
+                        amethyst: '#7C3AED',
+                        amethystGlow: '#9333EA',
+                        platinumGold: '#D4AF37',
+                        silverText: '#A1A1AA'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0A0A0C;
+            color: #F4F4F5;
+        }
+        .gold-gradient {
+            background: linear-gradient(135deg, #F3E5AB 0%, #D4AF37 50%, #AA7C11 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .purple-glow {
+            box-shadow: 0 0 40px -10px rgba(124, 58, 237, 0.35);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-amethyst selection:text-white">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-studioBlack/80 backdrop-blur-md border-b border-white/5">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold tracking-wider flex items-center gap-2">
+                <span class="w-8 h-8 rounded-lg bg-gradient-to-br from-amethyst to-purple-900 flex items-center justify-center text-white font-extrabold text-sm border border-platinumGold/40">WD</span>
+                <span>WATZDAT<span class="text-platinumGold">.</span></span>
+            </a>
+            <div class="hidden md:flex space-x-8 text-sm text-silverText">
+                <a href="#servis" class="hover:text-white transition">Servis</a>
+                <a href="#kelebihan" class="hover:text-white transition">Pendekatan Kami</a>
+                <a href="#proses" class="hover:text-white transition">Proses Kerja</a>
+            </div>
+            <a href="https://wa.me/60134324427?text=Hi%20WatzDat,%20saya%20berminat%20untuk%20bincang%20projek%20website%20/%20design." target="_blank" class="px-5 py-2.5 text-xs font-semibold uppercase tracking-wider rounded-full bg-white text-studioBlack hover:bg-platinumGold hover:text-black transition">
+                Hubungi Kami
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-36 pb-24 px-6 relative overflow-hidden">
+        <!-- Ambient Glow -->
+        <div class="absolute top-20 left-1/2 -translate-x-1/2 w-[500px] h-[300px] bg-amethyst/20 blur-[120px] rounded-full pointer-events-none"></div>
+        
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <div class="inline-block px-4 py-1.5 mb-6 rounded-full border border-platinumGold/30 bg-platinumGold/5 text-platinumGold text-xs font-medium tracking-widest uppercase">
+                Creative Branding & Digital Presence
+            </div>
+            <h1 class="text-4xl md:text-6xl font-bold tracking-tight leading-tight mb-6">
+                Identiti Visual yang Tajam.<br>
+                <span class="gold-gradient">Website yang Meyakinkan.</span>
+            </h1>
+            <p class="text-silverText text-base md:text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
+                Dari rekaan grafik komersial ke pembangunan laman web moden. WatzDat Creative Studio membantu bisnes anda tampil lebih profesional, kemas, dan dipercayai pelanggan.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="https://wa.me/60134324427?text=Hi%20WatzDat,%20saya%20nak%20tanya%20pakej%20website." target="_blank" class="px-8 py-4 rounded-xl bg-amethyst hover:bg-amethystGlow text-white font-semibold transition purple-glow">
+                    Mulakan Projek Anda
+                </a>
+                <a href="#servis" class="px-8 py-4 rounded-xl bg-studioCard border border-white/10 hover:border-platinumGold/50 text-white font-semibold transition">
+                    Lihat Kepakaran Kami
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servis Section -->
+    <section id="servis" class="py-24 px-6 border-t border-white/5">
+        <div class="max-w-6xl mx-auto">
+            <div class="mb-16">
+                <span class="text-platinumGold text-xs font-semibold tracking-widest uppercase">Apa Yang Kami Buat</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-2">Solusi Kreatif & Digital Setempat</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-studioCard p-8 rounded-2xl border border-white/5 hover:border-amethyst/50 transition group">
+                    <div class="w-12 h-12 rounded-xl bg-amethyst/10 border border-amethyst/30 flex items-center justify-center text-amethyst mb-6 group-hover:scale-110 transition">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Web Design & Landing Page</h3>
+                    <p class="text-silverText text-sm leading-relaxed">
+                        Pembangunan laman web korporat, profil syarikat, dan *landing page* berfokuskan jualan. Pantas, mesra telefon pintar, dan dibina khusus ikut identiti jenama anda.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-studioCard p-8 rounded-2xl border border-white/5 hover:border-platinumGold/50 transition group">
+                    <div class="w-12 h-12 rounded-xl bg-platinumGold/10 border border-platinumGold/30 flex items-center justify-center text-platinumGold mb-6 group-hover:scale-110 transition">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Brand Identity & Grafik</h3>
+                    <p class="text-silverText text-sm leading-relaxed">
+                        Rekaan logo, poster pemasaran digital, dan aset visual media sosial dengan susun atur bersih serta kontras warna yang memikat perhatian prospek.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-studioCard p-8 rounded-2xl border border-white/5 hover:border-amethyst/50 transition group">
+                    <div class="w-12 h-12 rounded-xl bg-amethyst/10 border border-amethyst/30 flex items-center justify-center text-amethyst mb-6 group-hover:scale-110 transition">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Commercial Print & Signage</h3>
+                    <p class="text-silverText text-sm leading-relaxed">
+                        Cetakan pelekat produk (sticker), bunting promosi, banner, dan bahan pemasaran fizikal untuk menyokong penjenamaan *offline* bisnes anda.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kelebihan / Kenapa Pilih Kami -->
+    <section id="kelebihan" class="py-24 px-6 bg-studioCard/50 border-t border-white/5">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="text-amethyst text-xs font-semibold tracking-widest uppercase">Kelebihan WatzDat</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-6">Bukan Sekadar Kod, Tetapi Seni Susun Atur.</h2>
+                <p class="text-silverText text-sm leading-relaxed mb-6">
+                    Kebanyakan laman web gagal menarik pelanggan kerana susun atur yang serabut. Dengan latar belakang rekaan grafik komersial, setiap halaman yang kami bina mengutamakan:
+                </p>
+                <ul class="space-y-4 text-sm">
+                    <li class="flex items-start gap-3">
+                        <span class="text-platinumGold font-bold">✓</span>
+                        <span><strong>Visual Hierarchy yang Jelas:</strong> Pelawat terus faham apa yang anda tawarkan dalam masa 5 saat pertama.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-platinumGold font-bold">✓</span>
+                        <span><strong>Mobile-First Experience:</strong> Paparan kemas dan pantas diakses terus melalui pautan WhatsApp atau media sosial.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-platinumGold font-bold">✓</span>
+                        <span><strong>Custom-Tailored:</strong> Warna, tipografi, dan struktur disesuaikan sepenuhnya dengan identiti syarikat anda.</span>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Visual Mockup Box -->
+            <div class="bg-studioBlack p-6 rounded-2xl border border-white/10 purple-glow">
+                <div class="flex items-center gap-2 mb-4 border-b border-white/10 pb-3">
+                    <span class="w-3 h-3 rounded-full bg-red-500/80"></span>
+                    <span class="w-3 h-3 rounded-full bg-yellow-500/80"></span>
+                    <span class="w-3 h-3 rounded-full bg-green-500/80"></span>
+                    <span class="text-xs text-silverText ml-2 font-mono">watzdat-studio.github.io</span>
+                </div>
+                <div class="space-y-4 py-4">
+                    <div class="h-4 w-1/3 bg-amethyst/30 rounded"></div>
+                    <div class="h-8 w-3/4 bg-white/10 rounded"></div>
+                    <div class="h-20 w-full bg-white/5 rounded-xl border border-white/5 p-4 flex items-center justify-between">
+                        <div>
+                            <div class="h-3 w-24 bg-platinumGold/50 rounded mb-2"></div>
+                            <div class="h-2 w-40 bg-white/20 rounded"></div>
+                        </div>
+                        <div class="px-4 py-2 rounded-lg bg-amethyst text-xs font-semibold">Ready to Launch</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proses Kerja -->
+    <section id="proses" class="py-24 px-6 border-t border-white/5">
+        <div class="max-w-5xl mx-auto text-center">
+            <span class="text-platinumGold text-xs font-semibold tracking-widest uppercase">Aliran Kerja</span>
+            <h2 class="text-3xl font-bold mt-2 mb-16">4 Langkah Mudah ke Website Anda</h2>
+            
+            <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-6 text-left">
+                <div class="p-6 rounded-xl bg-studioCard border border-white/5">
+                    <div class="text-platinumGold font-mono text-sm mb-2">01</div>
+                    <h4 class="font-bold mb-2">Sesi Brief</h4>
+                    <p class="text-xs text-silverText leading-relaxed">Fahami matlamat bisnes, sasaran pelanggan, dan bahan kandungan anda.</p>
+                </div>
+                <div class="p-6 rounded-xl bg-studioCard border border-white/5">
+                    <div class="text-platinumGold font-mono text-sm mb-2">02</div>
+                    <h4 class="font-bold mb-2">Concept Layout</h4>
+                    <p class="text-xs text-silverText leading-relaxed">Penyediaan draf visual muka depan untuk persetujuan gaya dan warna.</p>
+                </div>
+                <div class="p-6 rounded-xl bg-studioCard border border-white/5">
+                    <div class="text-platinumGold font-mono text-sm mb-2">03</div>
+                    <h4 class="font-bold mb-2">Pembangunan</h4>
+                    <p class="text-xs text-silverText leading-relaxed">Penulisan kod, integrasi butang WhatsApp, dan pengoptimuman paparan mudah alih.</p>
+                </div>
+                <div class="p-6 rounded-xl bg-studioCard border border-white/5">
+                    <div class="text-platinumGold font-mono text-sm mb-2">04</div>
+                    <h4 class="font-bold mb-2">Pelancaran</h4>
+                    <p class="text-xs text-silverText leading-relaxed">Semakan akhir dan laman web sedia dikongsikan kepada pelanggan anda.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Footer -->
+    <footer class="py-20 px-6 border-t border-white/10 text-center relative overflow-hidden">
+        <div class="max-w-2xl mx-auto relative z-10">
+            <h2 class="text-3xl font-bold mb-4">Sedia Naik Taraf Imej Bisnes Anda?</h2>
+            <p class="text-silverText text-sm mb-8">
+                Hubungi kami untuk perbincangan santai mengenai keperluan website atau rekaan grafik syarikat anda.
+            </p>
+            <a href="https://wa.me/60134324427?text=Hi%20WatzDat%20Creative%20Studio,%20saya%20berminat%20untuk%20bincang%20projek%20website." target="_blank" class="inline-block px-8 py-4 rounded-xl bg-gradient-to-r from-amethyst to-purple-700 hover:opacity-90 text-white font-semibold transition">
+                WhatsApp WatzDat Sekarang
+            </a>
+            <div class="mt-16 pt-8 border-t border-white/5 text-xs text-silverText flex flex-col sm:flex-row justify-between items-center gap-4">
+                <p>&copy; 2026 WatzDat Creative Studio (Watz Dat Enterprise). Hak Cipta Terpelihara.</p>
+                <p>Bandar Puncak Alam, Selangor</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
