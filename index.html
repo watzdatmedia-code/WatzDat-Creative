@@ -3,11 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WatzDat Creative Studio | Branding, Print & Web Design</title>
-    <!-- Tailwind CSS CDN untuk styling pantas & kemas -->
+    <title>WatzDat Creative Studio | Portfolio Branding, Print & Web Design</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts: Plus Jakarta Sans -->
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
@@ -40,143 +38,189 @@
         .purple-glow {
             box-shadow: 0 0 40px -10px rgba(124, 58, 237, 0.35);
         }
+        .portfolio-card img {
+            transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .portfolio-card:hover img {
+            transform: scale(1.05);
+        }
     </style>
 </head>
 <body class="antialiased selection:bg-amethyst selection:text-white">
 
     <!-- Navbar -->
-    <nav class="fixed w-full z-50 bg-studioBlack/80 backdrop-blur-md border-b border-white/5">
+    <nav class="fixed w-full z-40 bg-studioBlack/85 backdrop-blur-md border-b border-white/5">
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-xl font-bold tracking-wider flex items-center gap-2">
-                <span class="w-8 h-8 rounded-lg bg-gradient-to-br from-amethyst to-purple-900 flex items-center justify-center text-white font-extrabold text-sm border border-platinumGold/40">WD</span>
+            <a href="#" class="text-xl font-bold tracking-wider flex items-center gap-2.5">
+                <span class="w-8 h-8 rounded-lg bg-gradient-to-br from-amethyst to-purple-950 flex items-center justify-center text-white font-extrabold text-sm border border-platinumGold/50">WD</span>
                 <span>WATZDAT<span class="text-platinumGold">.</span></span>
             </a>
             <div class="hidden md:flex space-x-8 text-sm text-silverText">
-                <a href="#servis" class="hover:text-white transition">Servis</a>
-                <a href="#kelebihan" class="hover:text-white transition">Pendekatan Kami</a>
-                <a href="#proses" class="hover:text-white transition">Proses Kerja</a>
+                <a href="#portfolio" class="hover:text-white transition">Portfolio Kerja</a>
+                <a href="#servis" class="hover:text-white transition">Kepakaran</a>
+                <a href="#proses" class="hover:text-white transition">Proses</a>
             </div>
-            <a href="https://wa.me/60134324427?text=Hi%20WatzDat,%20saya%20berminat%20untuk%20bincang%20projek%20website%20/%20design." target="_blank" class="px-5 py-2.5 text-xs font-semibold uppercase tracking-wider rounded-full bg-white text-studioBlack hover:bg-platinumGold hover:text-black transition">
-                Hubungi Kami
+            <a href="https://wa.me/60134324427?text=Hi%20WatzDat%20Creative%20Studio,%20saya%20baru%20tengok%20portfolio%20dan%20berminat%20untuk%20bincang%20projek." target="_blank" class="px-5 py-2.5 text-xs font-semibold uppercase tracking-wider rounded-full bg-white text-studioBlack hover:bg-platinumGold hover:text-black transition">
+                Hubungi Studio
             </a>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="pt-36 pb-24 px-6 relative overflow-hidden">
-        <!-- Ambient Glow -->
-        <div class="absolute top-20 left-1/2 -translate-x-1/2 w-[500px] h-[300px] bg-amethyst/20 blur-[120px] rounded-full pointer-events-none"></div>
+    <section class="pt-36 pb-20 px-6 relative overflow-hidden">
+        <div class="absolute top-20 left-1/2 -translate-x-1/2 w-[520px] h-[300px] bg-amethyst/20 blur-[130px] rounded-full pointer-events-none"></div>
         
         <div class="max-w-4xl mx-auto text-center relative z-10">
             <div class="inline-block px-4 py-1.5 mb-6 rounded-full border border-platinumGold/30 bg-platinumGold/5 text-platinumGold text-xs font-medium tracking-widest uppercase">
-                Creative Branding & Digital Presence
+                WatzDat Creative Studio • Branding, Print & Web
             </div>
-            <h1 class="text-4xl md:text-6xl font-bold tracking-tight leading-tight mb-6">
-                Identiti Visual yang Tajam.<br>
-                <span class="gold-gradient">Website yang Meyakinkan.</span>
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight mb-6">
+                Rekaan Berimpak Tinggi.<br>
+                <span class="gold-gradient">Identiti Jenama yang Kukuh.</span>
             </h1>
             <p class="text-silverText text-base md:text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
-                Dari rekaan grafik komersial ke pembangunan laman web moden. WatzDat Creative Studio membantu bisnes anda tampil lebih profesional, kemas, dan dipercayai pelanggan.
+                Menghimpunkan karya penjenamaan korporat, grafik pemasaran komersial, percetakan fizikal, serta pembangunan laman web moden yang direka khusus untuk melonjakkan kredibiliti bisnes anda.
             </p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="https://wa.me/60134324427?text=Hi%20WatzDat,%20saya%20nak%20tanya%20pakej%20website." target="_blank" class="px-8 py-4 rounded-xl bg-amethyst hover:bg-amethystGlow text-white font-semibold transition purple-glow">
-                    Mulakan Projek Anda
+                <a href="#portfolio" class="px-8 py-4 rounded-xl bg-amethyst hover:bg-amethystGlow text-white font-semibold transition purple-glow">
+                    Lihat Hasil Kerja Kami
                 </a>
-                <a href="#servis" class="px-8 py-4 rounded-xl bg-studioCard border border-white/10 hover:border-platinumGold/50 text-white font-semibold transition">
-                    Lihat Kepakaran Kami
+                <a href="https://wa.me/60134324427?text=Hi%20WatzDat,%20saya%20nak%20minta%20cadangan%20konsep%20design%20/%20website." target="_blank" class="px-8 py-4 rounded-xl bg-studioCard border border-white/10 hover:border-platinumGold/50 text-white font-semibold transition">
+                    Minta Draf Konsep
                 </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-24 px-6 border-t border-white/5">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+                <div>
+                    <span class="text-platinumGold text-xs font-semibold tracking-widest uppercase">Arkib Karya & Projek</span>
+                    <h2 class="text-3xl md:text-4xl font-bold mt-2">Portfolio Terpilih</h2>
+                </div>
+                
+                <!-- Filter Buttons -->
+                <div class="flex flex-wrap gap-2" id="filter-buttons">
+                    <button onclick="filterPortfolio('all', this)" class="filter-btn active px-4 py-2 rounded-lg text-xs font-semibold bg-amethyst text-white transition">Semua</button>
+                    <button onclick="filterPortfolio('branding', this)" class="filter-btn px-4 py-2 rounded-lg text-xs font-semibold bg-studioCard text-silverText hover:text-white border border-white/5 transition">Brand & Logo</button>
+                    <button onclick="filterPortfolio('graphic', this)" class="filter-btn px-4 py-2 rounded-lg text-xs font-semibold bg-studioCard text-silverText hover:text-white border border-white/5 transition">Grafik & Poster</button>
+                    <button onclick="filterPortfolio('print', this)" class="filter-btn px-4 py-2 rounded-lg text-xs font-semibold bg-studioCard text-silverText hover:text-white border border-white/5 transition">Commercial Print</button>
+                    <button onclick="filterPortfolio('web', this)" class="filter-btn px-4 py-2 rounded-lg text-xs font-semibold bg-studioCard text-silverText hover:text-white border border-white/5 transition">Web Concept</button>
+                </div>
+            </div>
+
+            <!-- Portfolio Grid -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8" id="portfolio-grid">
+                
+                <!-- Item 1: Branding -->
+                <div class="portfolio-item portfolio-card group bg-studioCard rounded-2xl overflow-hidden border border-white/5 hover:border-platinumGold/40 transition cursor-pointer" data-category="branding" onclick="openModal('Identiti Monogram & Jenama WatzDat', 'Brand & Logo', 'Pembangunan sistem identiti visual korporat termasuk rekaan logo monogram WD, palet warna premium (Amethyst, Platinum Gold & Studio Black), serta garis panduan visual.', 'images/work-1.jpg')">
+                    <div class="aspect-[4/3] bg-zinc-900 overflow-hidden relative">
+                        <img src="images/work-1.jpg" onerror="this.src='https://placehold.co/800x600/131318/D4AF37?text=Upload+images/work-1.jpg'" alt="Brand Identity" class="w-full h-full object-cover">
+                        <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-studioBlack/80 backdrop-blur-md text-[11px] font-medium text-platinumGold border border-platinumGold/30">Brand & Logo</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold group-hover:text-platinumGold transition">Identiti Monogram & Jenama</h3>
+                        <p class="text-silverText text-xs mt-2 line-clamp-2">Rekaan logo korporat, tipografi moden, dan sistem identiti visual berimpak tinggi.</p>
+                    </div>
+                </div>
+
+                <!-- Item 2: Grafik & Poster -->
+                <div class="portfolio-item portfolio-card group bg-studioCard rounded-2xl overflow-hidden border border-white/5 hover:border-amethyst/50 transition cursor-pointer" data-category="graphic" onclick="openModal('Kempen Visual & Infografik Korporat', 'Grafik & Poster', 'Susun atur poster pemasaran digital dan infografik kewangan berstruktur tinggi dengan hierarki tipografi yang jelas untuk menarik perhatian audiens sasaran.', 'images/work-2.jpg')">
+                    <div class="aspect-[4/3] bg-zinc-900 overflow-hidden relative">
+                        <img src="images/work-2.jpg" onerror="this.src='https://placehold.co/800x600/131318/7C3AED?text=Upload+images/work-2.jpg'" alt="Poster & Infographic" class="w-full h-full object-cover">
+                        <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-studioBlack/80 backdrop-blur-md text-[11px] font-medium text-purple-300 border border-amethyst/40">Grafik & Poster</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold group-hover:text-amethyst transition">Kempen Visual & Infografik</h3>
+                        <p class="text-silverText text-xs mt-2 line-clamp-2">Rekaan poster promosi media sosial dan infografik berstruktur untuk penyampaian mesej pantas.</p>
+                    </div>
+                </div>
+
+                <!-- Item 3: Commercial Print -->
+                <div class="portfolio-item portfolio-card group bg-studioCard rounded-2xl overflow-hidden border border-white/5 hover:border-platinumGold/40 transition cursor-pointer" data-category="print" onclick="openModal('Pemasangan Bunting & Bahan Percetakan Skala Besar', 'Commercial Print', 'Pengurusan rekaan grafik sedia cetak (print-ready) dan koordinasi pengeluaran bagi 150 unit bunting promosi, banner acara, serta pelekat produk komersial.', 'images/work-3.jpg')">
+                    <div class="aspect-[4/3] bg-zinc-900 overflow-hidden relative">
+                        <img src="images/work-3.jpg" onerror="this.src='https://placehold.co/800x600/131318/D4AF37?text=Upload+images/work-3.jpg'" alt="Commercial Print" class="w-full h-full object-cover">
+                        <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-studioBlack/80 backdrop-blur-md text-[11px] font-medium text-platinumGold border border-platinumGold/30">Commercial Print</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold group-hover:text-platinumGold transition">Bunting, Banner & Sticker Produk</h3>
+                        <p class="text-silverText text-xs mt-2 line-clamp-2">Rekaan dan cetakan fizikal berskala besar untuk kempen lapangan dan pembungkusan produk.</p>
+                    </div>
+                </div>
+
+                <!-- Item 4: Web Concept -->
+                <div class="portfolio-item portfolio-card group bg-studioCard rounded-2xl overflow-hidden border border-white/5 hover:border-amethyst/50 transition cursor-pointer" data-category="web" onclick="openModal('Konsep Laman Web & Landing Page Korporat', 'Web Concept', 'Pembangunan antaramuka laman web responsif (mobile-first) dengan integrasi terus ke WhatsApp, direka khas mengikut Corporate Identity (CI) syarikat.', 'images/work-4.jpg')">
+                    <div class="aspect-[4/3] bg-zinc-900 overflow-hidden relative">
+                        <img src="images/work-4.jpg" onerror="this.src='https://placehold.co/800x600/131318/7C3AED?text=Upload+images/work-4.jpg'" alt="Web Design Concept" class="w-full h-full object-cover">
+                        <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-studioBlack/80 backdrop-blur-md text-[11px] font-medium text-purple-300 border border-amethyst/40">Web Concept</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold group-hover:text-amethyst transition">Landing Page & Web Korporat</h3>
+                        <p class="text-silverText text-xs mt-2 line-clamp-2">Susun atur laman web moden, pantas, dan mesra peranti mudah alih untuk profil syarikat.</p>
+                    </div>
+                </div>
+
+                <!-- Item 5: Vector & Custom Artwork -->
+                <div class="portfolio-item portfolio-card group bg-studioCard rounded-2xl overflow-hidden border border-white/5 hover:border-platinumGold/40 transition cursor-pointer" data-category="graphic" onclick="openModal('Ilustrasi Vektor & Corak Kerawang Eksklusif', 'Grafik & Poster', 'Penghasilan aset vektor beresolusi tinggi dan olahan motif tradisional moden untuk kegunaan latar belakang korporat, cenderahati, dan percetakan.', 'images/work-5.jpg')">
+                    <div class="aspect-[4/3] bg-zinc-900 overflow-hidden relative">
+                        <img src="images/work-5.jpg" onerror="this.src='https://placehold.co/800x600/131318/D4AF37?text=Upload+images/work-5.jpg'" alt="Vector Artwork" class="w-full h-full object-cover">
+                        <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-studioBlack/80 backdrop-blur-md text-[11px] font-medium text-platinumGold border border-platinumGold/30">Grafik & Poster</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold group-hover:text-platinumGold transition">Aset Vektor & Motif Eksklusif</h3>
+                        <p class="text-silverText text-xs mt-2 line-clamp-2">Rekaan vektor tajam tanpa pecah untuk kegunaan cetakan besar mahupun aset digital.</p>
+                    </div>
+                </div>
+
+                <!-- Item 6: Packaging & Label -->
+                <div class="portfolio-item portfolio-card group bg-studioCard rounded-2xl overflow-hidden border border-white/5 hover:border-amethyst/50 transition cursor-pointer" data-category="print" onclick="openModal('Rekaan Label & Pembungkusan F&B', 'Commercial Print', 'Rekaan label produk makanan dan minuman yang menonjol di rak jualan dengan pilihan kemasan kalis air dan potongan mengikut bentuk (die-cut).', 'images/work-6.jpg')">
+                    <div class="aspect-[4/3] bg-zinc-900 overflow-hidden relative">
+                        <img src="images/work-6.jpg" onerror="this.src='https://placehold.co/800x600/131318/7C3AED?text=Upload+images/work-6.jpg'" alt="Product Label" class="w-full h-full object-cover">
+                        <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-studioBlack/80 backdrop-blur-md text-[11px] font-medium text-purple-300 border border-amethyst/40">Commercial Print</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold group-hover:text-amethyst transition">Label Produk & Pembungkusan</h3>
+                        <p class="text-silverText text-xs mt-2 line-clamp-2">Rekaan pelekat produk die-cut untuk usahawan F&B dan jenama runcit tempatan.</p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
     <!-- Servis Section -->
-    <section id="servis" class="py-24 px-6 border-t border-white/5">
+    <section id="servis" class="py-24 px-6 bg-studioCard/40 border-t border-white/5">
         <div class="max-w-6xl mx-auto">
             <div class="mb-16">
-                <span class="text-platinumGold text-xs font-semibold tracking-widest uppercase">Apa Yang Kami Buat</span>
-                <h2 class="text-3xl md:text-4xl font-bold mt-2">Solusi Kreatif & Digital Setempat</h2>
+                <span class="text-amethyst text-xs font-semibold tracking-widest uppercase">Skop Perkhidmatan</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-2">Ekosistem Kreatif Bersepadu</h2>
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
-                <!-- Card 1 -->
-                <div class="bg-studioCard p-8 rounded-2xl border border-white/5 hover:border-amethyst/50 transition group">
-                    <div class="w-12 h-12 rounded-xl bg-amethyst/10 border border-amethyst/30 flex items-center justify-center text-amethyst mb-6 group-hover:scale-110 transition">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-                    </div>
+                <div class="bg-studioBlack p-8 rounded-2xl border border-white/5">
+                    <div class="text-platinumGold font-mono text-sm mb-4">01 / DIGITAL</div>
                     <h3 class="text-xl font-bold mb-3">Web Design & Landing Page</h3>
                     <p class="text-silverText text-sm leading-relaxed">
-                        Pembangunan laman web korporat, profil syarikat, dan *landing page* berfokuskan jualan. Pantas, mesra telefon pintar, dan dibina khusus ikut identiti jenama anda.
+                        Laman web profil syarikat dan halaman jualan yang dibina berpandukan CI anda. Ringan, pantas dimuatkan, dan terus menghubungkan pelanggan ke WhatsApp.
                     </p>
                 </div>
 
-                <!-- Card 2 -->
-                <div class="bg-studioCard p-8 rounded-2xl border border-white/5 hover:border-platinumGold/50 transition group">
-                    <div class="w-12 h-12 rounded-xl bg-platinumGold/10 border border-platinumGold/30 flex items-center justify-center text-platinumGold mb-6 group-hover:scale-110 transition">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path></svg>
-                    </div>
+                <div class="bg-studioBlack p-8 rounded-2xl border border-white/5">
+                    <div class="text-amethyst font-mono text-sm mb-4">02 / VISUAL</div>
                     <h3 class="text-xl font-bold mb-3">Brand Identity & Grafik</h3>
                     <p class="text-silverText text-sm leading-relaxed">
-                        Rekaan logo, poster pemasaran digital, dan aset visual media sosial dengan susun atur bersih serta kontras warna yang memikat perhatian prospek.
+                        Pembinaan logo, kit jenama, poster kempen media sosial, dan aset visual komersial dengan susun atur bersih serta ruang negatif yang seimbang.
                     </p>
                 </div>
 
-                <!-- Card 3 -->
-                <div class="bg-studioCard p-8 rounded-2xl border border-white/5 hover:border-amethyst/50 transition group">
-                    <div class="w-12 h-12 rounded-xl bg-amethyst/10 border border-amethyst/30 flex items-center justify-center text-amethyst mb-6 group-hover:scale-110 transition">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
-                    </div>
+                <div class="bg-studioBlack p-8 rounded-2xl border border-white/5">
+                    <div class="text-platinumGold font-mono text-sm mb-4">03 / FIZIKAL</div>
                     <h3 class="text-xl font-bold mb-3">Commercial Print & Signage</h3>
                     <p class="text-silverText text-sm leading-relaxed">
-                        Cetakan pelekat produk (sticker), bunting promosi, banner, dan bahan pemasaran fizikal untuk menyokong penjenamaan *offline* bisnes anda.
+                        Penyediaan fail sedia cetak dan pengeluaran sticker produk, bunting, banner, serta papan tanda bagi menyokong kehadiran fizikal bisnes anda.
                     </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Kelebihan / Kenapa Pilih Kami -->
-    <section id="kelebihan" class="py-24 px-6 bg-studioCard/50 border-t border-white/5">
-        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-            <div>
-                <span class="text-amethyst text-xs font-semibold tracking-widest uppercase">Kelebihan WatzDat</span>
-                <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-6">Bukan Sekadar Kod, Tetapi Seni Susun Atur.</h2>
-                <p class="text-silverText text-sm leading-relaxed mb-6">
-                    Kebanyakan laman web gagal menarik pelanggan kerana susun atur yang serabut. Dengan latar belakang rekaan grafik komersial, setiap halaman yang kami bina mengutamakan:
-                </p>
-                <ul class="space-y-4 text-sm">
-                    <li class="flex items-start gap-3">
-                        <span class="text-platinumGold font-bold">✓</span>
-                        <span><strong>Visual Hierarchy yang Jelas:</strong> Pelawat terus faham apa yang anda tawarkan dalam masa 5 saat pertama.</span>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <span class="text-platinumGold font-bold">✓</span>
-                        <span><strong>Mobile-First Experience:</strong> Paparan kemas dan pantas diakses terus melalui pautan WhatsApp atau media sosial.</span>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <span class="text-platinumGold font-bold">✓</span>
-                        <span><strong>Custom-Tailored:</strong> Warna, tipografi, dan struktur disesuaikan sepenuhnya dengan identiti syarikat anda.</span>
-                    </li>
-                </ul>
-            </div>
-            
-            <!-- Visual Mockup Box -->
-            <div class="bg-studioBlack p-6 rounded-2xl border border-white/10 purple-glow">
-                <div class="flex items-center gap-2 mb-4 border-b border-white/10 pb-3">
-                    <span class="w-3 h-3 rounded-full bg-red-500/80"></span>
-                    <span class="w-3 h-3 rounded-full bg-yellow-500/80"></span>
-                    <span class="w-3 h-3 rounded-full bg-green-500/80"></span>
-                    <span class="text-xs text-silverText ml-2 font-mono">watzdat-studio.github.io</span>
-                </div>
-                <div class="space-y-4 py-4">
-                    <div class="h-4 w-1/3 bg-amethyst/30 rounded"></div>
-                    <div class="h-8 w-3/4 bg-white/10 rounded"></div>
-                    <div class="h-20 w-full bg-white/5 rounded-xl border border-white/5 p-4 flex items-center justify-between">
-                        <div>
-                            <div class="h-3 w-24 bg-platinumGold/50 rounded mb-2"></div>
-                            <div class="h-2 w-40 bg-white/20 rounded"></div>
-                        </div>
-                        <div class="px-4 py-2 rounded-lg bg-amethyst text-xs font-semibold">Ready to Launch</div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -185,29 +229,29 @@
     <!-- Proses Kerja -->
     <section id="proses" class="py-24 px-6 border-t border-white/5">
         <div class="max-w-5xl mx-auto text-center">
-            <span class="text-platinumGold text-xs font-semibold tracking-widest uppercase">Aliran Kerja</span>
-            <h2 class="text-3xl font-bold mt-2 mb-16">4 Langkah Mudah ke Website Anda</h2>
+            <span class="text-platinumGold text-xs font-semibold tracking-widest uppercase">Aliran Kerja Studio</span>
+            <h2 class="text-3xl font-bold mt-2 mb-16">Bagaimana Kami Bekerja</h2>
             
             <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-6 text-left">
                 <div class="p-6 rounded-xl bg-studioCard border border-white/5">
-                    <div class="text-platinumGold font-mono text-sm mb-2">01</div>
-                    <h4 class="font-bold mb-2">Sesi Brief</h4>
-                    <p class="text-xs text-silverText leading-relaxed">Fahami matlamat bisnes, sasaran pelanggan, dan bahan kandungan anda.</p>
+                    <div class="text-platinumGold font-mono text-sm mb-2">Langkah 01</div>
+                    <h4 class="font-bold mb-2">Konsultasi & CI</h4>
+                    <p class="text-xs text-silverText leading-relaxed">Meneliti identiti korporat, warna rasmi, dan objektif perniagaan anda.</p>
                 </div>
                 <div class="p-6 rounded-xl bg-studioCard border border-white/5">
-                    <div class="text-platinumGold font-mono text-sm mb-2">02</div>
-                    <h4 class="font-bold mb-2">Concept Layout</h4>
-                    <p class="text-xs text-silverText leading-relaxed">Penyediaan draf visual muka depan untuk persetujuan gaya dan warna.</p>
+                    <div class="text-platinumGold font-mono text-sm mb-2">Langkah 02</div>
+                    <h4 class="font-bold mb-2">Draf Konsep</h4>
+                    <p class="text-xs text-silverText leading-relaxed">Menghasilkan cadangan visual awal sebelum produksi penuh dimulakan.</p>
                 </div>
                 <div class="p-6 rounded-xl bg-studioCard border border-white/5">
-                    <div class="text-platinumGold font-mono text-sm mb-2">03</div>
-                    <h4 class="font-bold mb-2">Pembangunan</h4>
-                    <p class="text-xs text-silverText leading-relaxed">Penulisan kod, integrasi butang WhatsApp, dan pengoptimuman paparan mudah alih.</p>
+                    <div class="text-platinumGold font-mono text-sm mb-2">Langkah 03</div>
+                    <h4 class="font-bold mb-2">Produksi & Semakan</h4>
+                    <p class="text-xs text-silverText leading-relaxed">Pelaksanaan rekaan penuh atau pembangunan kod dengan sesi semakan teliti.</p>
                 </div>
                 <div class="p-6 rounded-xl bg-studioCard border border-white/5">
-                    <div class="text-platinumGold font-mono text-sm mb-2">04</div>
-                    <h4 class="font-bold mb-2">Pelancaran</h4>
-                    <p class="text-xs text-silverText leading-relaxed">Semakan akhir dan laman web sedia dikongsikan kepada pelanggan anda.</p>
+                    <div class="text-platinumGold font-mono text-sm mb-2">Langkah 04</div>
+                    <h4 class="font-bold mb-2">Serahan Akhir</h4>
+                    <p class="text-xs text-silverText leading-relaxed">Penyerahan fail induk resolusi tinggi, cetakan siap, atau pelancaran laman web.</p>
                 </div>
             </div>
         </div>
@@ -216,12 +260,12 @@
     <!-- CTA Footer -->
     <footer class="py-20 px-6 border-t border-white/10 text-center relative overflow-hidden">
         <div class="max-w-2xl mx-auto relative z-10">
-            <h2 class="text-3xl font-bold mb-4">Sedia Naik Taraf Imej Bisnes Anda?</h2>
+            <h2 class="text-3xl font-bold mb-4">Bincang Projek Seterusnya</h2>
             <p class="text-silverText text-sm mb-8">
-                Hubungi kami untuk perbincangan santai mengenai keperluan website atau rekaan grafik syarikat anda.
+                Perlukan penjenamaan semula, bahan percetakan komersial, atau laman web korporat? Hubungi kami untuk sesi perbincangan ringkas.
             </p>
-            <a href="https://wa.me/60134324427?text=Hi%20WatzDat%20Creative%20Studio,%20saya%20berminat%20untuk%20bincang%20projek%20website." target="_blank" class="inline-block px-8 py-4 rounded-xl bg-gradient-to-r from-amethyst to-purple-700 hover:opacity-90 text-white font-semibold transition">
-                WhatsApp WatzDat Sekarang
+            <a href="https://wa.me/60134324427?text=Hi%20WatzDat%20Creative%20Studio,%20saya%20berminat%20untuk%20bincang%20projek." target="_blank" class="inline-block px-8 py-4 rounded-xl bg-gradient-to-r from-amethyst to-purple-700 hover:opacity-90 text-white font-semibold transition purple-glow">
+                WhatsApp WatzDat Creative Studio
             </a>
             <div class="mt-16 pt-8 border-t border-white/5 text-xs text-silverText flex flex-col sm:flex-row justify-between items-center gap-4">
                 <p>&copy; 2026 WatzDat Creative Studio (Watz Dat Enterprise). Hak Cipta Terpelihara.</p>
@@ -229,6 +273,70 @@
             </div>
         </div>
     </footer>
+
+    <!-- Lightbox Modal untuk Preview Portfolio -->
+    <div id="portfolio-modal" class="fixed inset-0 z-50 hidden bg-black/90 backdrop-blur-sm flex items-center justify-center p-4" onclick="closeModal()">
+        <div class="bg-studioCard border border-white/10 rounded-2xl max-w-2xl w-full overflow-hidden shadow-2xl" onclick="event.stopPropagation()">
+            <div class="aspect-[16/10] bg-zinc-900 relative">
+                <img id="modal-img" src="" alt="Preview" class="w-full h-full object-cover">
+                <button onclick="closeModal()" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-black/70 text-white hover:bg-amethyst flex items-center justify-center transition">✕</button>
+            </div>
+            <div class="p-6 md:p-8">
+                <span id="modal-category" class="text-xs font-semibold uppercase tracking-widest text-platinumGold"></span>
+                <h3 id="modal-title" class="text-2xl font-bold mt-1 mb-3"></h3>
+                <p id="modal-desc" class="text-silverText text-sm leading-relaxed mb-6"></p>
+                <div class="flex justify-end">
+                    <a id="modal-wa" href="#" target="_blank" class="px-6 py-3 rounded-xl bg-amethyst hover:bg-amethystGlow text-white text-xs font-semibold uppercase tracking-wider transition">
+                        Tempah Servis Serupa
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script untuk Filter & Modal -->
+    <script>
+        function filterPortfolio(category, btn) {
+            // Update active button styling
+            document.querySelectorAll('.filter-btn').forEach(b => {
+                b.classList.remove('bg-amethyst', 'text-white');
+                b.classList.add('bg-studioCard', 'text-silverText');
+            });
+            btn.classList.remove('bg-studioCard', 'text-silverText');
+            btn.classList.add('bg-amethyst', 'text-white');
+
+            // Filter items
+            const items = document.querySelectorAll('.portfolio-item');
+            items.forEach(item => {
+                if (category === 'all' || item.getAttribute('data-category') === category) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        function openModal(title, category, desc, imgSrc) {
+            document.getElementById('modal-title').innerText = title;
+            document.getElementById('modal-category').innerText = category;
+            document.getElementById('modal-desc').innerText = desc;
+            
+            const modalImg = document.getElementById('modal-img');
+            modalImg.src = imgSrc;
+            modalImg.onerror = function() {
+                this.src = 'https://placehold.co/800x500/131318/D4AF37?text=' + encodeURIComponent(title);
+            };
+
+            const waText = encodeURIComponent(`Hi WatzDat, saya berminat dengan projek macam "${title}" (${category}).`);
+            document.getElementById('modal-wa').href = `https://wa.me/60134324427?text=${waText}`;
+
+            document.getElementById('portfolio-modal').classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('portfolio-modal').classList.add('hidden');
+        }
+    </script>
 
 </body>
 </html>
